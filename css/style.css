@@ -18,22 +18,18 @@ header {
     color: white;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
+.card{
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.home{
     align-items: center;
 }
 
-.wrapper .container {
-    width: 1024px;
+.home .container{
     border-radius: 8px;
-    margin: 16px;
     background: #FDEEDC;
-    padding: 16px;
-    flex-grow: 1;
-    height: fit-content;
 }
-
 
 .item {
     border-radius: 16px;
@@ -44,15 +40,7 @@ header {
     align-items: center;
 }
 
-.item > .inner h2 {
-    margin-bottom: unset;
-}
-
-.item > .inner p {
-    margin-top: 5px;
-}
-
-.form {
+/* .form {
     display: flex;
     padding: 16px;
     flex-direction: column;
@@ -69,34 +57,22 @@ header {
     margin-bottom: 4px;
     font-size: 18px;
     font-weight: lighter;
-}
+} */
 
 .shadow {
     box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
 }
 
 input[type=text], input[type=date] {
-    font-family: Raleway, sans-serif;
     background: #f7ece0;
     border: 2px solid #FFD8A9;
     border-radius: 8px;
-    padding: 16px;
     box-sizing: border-box;
     margin-bottom: 8px;
-    font-size: 24px;
 }
 
 .btn-submit {
-    width: fit-content;
-    font-family: Raleway, sans-serif;
-    border-radius: 16px;
-    padding: 12px 24px;
     border: 2px solid #F1A661;
-    color: black;
-    font-size: 24px;
-    margin-top: auto;
-    align-self: flex-end;
-    cursor: pointer;
 }
 
 .btn-submit:hover {

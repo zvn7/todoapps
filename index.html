@@ -14,34 +14,38 @@
 	</head>
 
 	<body>
-		<nav class="navbar text-white fixed-top" data-bs-theme="dark" style="background-color: #E38B29;">
+		<nav class="navbar text-white fixed-top" data-bs-theme="dark" style="background-color: #e38b29">
 			<div class="container-fluid">
 				<span class="navbar-brand mb-0 h1 mx-auto fw-bold">Todo List</span>
 			</div>
 		</nav>
 
-		<div class="wrapper mt-5">
-			<div class="container bg-white shadow pt-5 pb-5 px-5" id="add-todo">
-				<h2 class="container-header text-center mb-5">Tambah Tugas</h2>
-				<form class="form" action="#" id="form">
-					<div class="form-group form-title">
-						<label for="title">Aku ingin...</label>
-						<input type="text" id="title" name="title" required />
+		<div class="home flex-column mt-5">
+			<div class="card mt-5">
+				<div class="card-body">
+					<div class="container bg-white shadow pt-5 pb-5 px-5" id="add-todo">
+						<h2 class="container-header text-center mb-5">Tambah Tugas</h2>
+						<form class="form" action="#" id="form">
+							<label for="title" class="form-label">Aku ingin...</label>
+							<input type="text" class="form-control" id="title" name="title" required />
+							<label for="date" class="form-label">Masukkan deadline</label>
+							<input type="date" class="form-control" id="date" name="date" required />
+							<input type="submit" value="Tambah" name="Submit" class="btn btn-submit" />
+							<!-- <div class="form-group form-title">
+							</div>
+							<div class="form-group form-title mb-2">
+							</div> -->
+						</form>
 					</div>
-					<div class="form-group form-title mb-2">
-						<label for="date">Masukkan deadline</label>
-						<input type="date" id="date" name="date" required />
+					<div class="container mt-5 px-5 py-5">
+						<h3 class="container-header">Yang harus dilakukan</h3>
+						<div class="list-item" id="todos"></div>
 					</div>
-					<input type="submit" value="Tambah" name="Submit" class="btn-submit" />
-				</form>
-			</div>
-			<div class="container">
-				<h2 class="container-header">Yang harus dilakukan</h2>
-				<div class="list-item" id="todos"></div>
-			</div>
-			<div class="container">
-				<h2 class="container-header">Yang sudah dilakukan</h2>
-				<div class="list-item" id="completed-todos"></div>
+					<div class="container mt-5 px-5 py-5">
+						<h3 class="container-header">Yang sudah dilakukan</h3>
+						<div class="list-item" id="completed-todos"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 
